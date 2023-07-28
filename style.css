@@ -1,0 +1,113 @@
+/* @import url(https://www.fontfabric.com/fonts/intro-script/); */
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Fasthand', cursive;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+nav ul li{
+    padding: 10px;
+}
+.logo img{
+    width: 40px;    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 61vh; 
+    display: flex;   
+    background-color: black;
+    color: black;
+    font-family:'Fasthand', cursive;
+    
+    margin: 20px auto;
+    width: 70%;
+    padding: 34px;
+    border-radius: 12px;
+    background-image: url('2.jpg');
+}
+
+.bottom{
+    position: sticky;
+    background-color: black;
+    height: 130px;
+    display:flex;
+    justify-content: center;
+    color: white;
+    bottom: 0;
+    align-items: center;
+    flex-direction: column;
+}
+#progressBar{
+    /* margin-top: 10px; */
+    width: 70vw;
+    cursor: pointer;
+    /* z-index: 0; */
+}
+.icons i{
+    padding: 8px;
+    cursor: pointer;
+}
+.song_container{
+    margin-top: 30px;
+    color: white;
+}
+.songItem{
+    height: 50px;
+    display: flex; 
+    background-color: black;
+    margin: 12px 0;
+    /* justify-content: space-around; */
+    align-items: center;
+    border-radius: 10px;
+}
+.songItem img{
+    width: 42px;
+    height: 40px;
+    margin: 0 10px;
+} 
+.timeStamp{
+    margin: 0 10px;
+    /* padding: 0 10px; */
+    /* position: relative; */
+     
+    /* left:4rem; */
+
+}
+.timeStamp i{
+    /* padding-left: 10px; */
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 1vw;
+}
+.songInfo img{
+    padding: 0 10px;
+    opacity: 0;
+    transition: 0.2s ease-in;
+}
+.songName2{
+    font-family: 'Fasthand', cursive;
+    position: absolute;
+    left: 75px;
+    top: 30px;
+}
