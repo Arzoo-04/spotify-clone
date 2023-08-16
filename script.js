@@ -122,6 +122,7 @@ document.getElementById("next").addEventListener('click', ()=>{
     }
     audioElement.src = `songs/${songIndex}.mp3`;
     currentSong.innerHTML = songs[songIndex].songName;
+    gif1.src = songs[songIndex].coverpath;
     audioElement.currentTime = 0;
     audioElement.play();
     gif1.style.opacity = 1;
@@ -130,7 +131,7 @@ document.getElementById("next").addEventListener('click', ()=>{
     audioElement.classList.add('fa-pause');
 })
 
-document.getElementById("next").addEventListener('click', ()=>{
+document.getElementById("prev").addEventListener('click', ()=>{
     if(songIndex<=0){
         songIndex = 0;
     }
@@ -139,6 +140,7 @@ document.getElementById("next").addEventListener('click', ()=>{
     }
     audioElement.src = `songs/${songIndex}.mp3`;
     currentSong.innerHTML = songs[songIndex].songName;
+    gif1.src = songs[songIndex].coverpath;
     audioElement.currentTime = 0;
     audioElement.play();
     gif1.style.opacity = 1;
